@@ -7,4 +7,7 @@
   * Collision management on mixin?
 * Add browserify support to create a browser bundle and run the tests also in
   browsers
-
+* Document how to override parse and toJSON and the hidden methods
+* Document on section Usage its use with browserify.
+* Document on section Usage its use standalone.
+* Document briefly its dependencies
