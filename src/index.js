@@ -6,5 +6,3 @@ Basics.View       = require('./view')
 Basics.Fn         = require('./fn')
 module.exports    = Basics
 
-console.log('loaded!')
-
