@@ -1,0 +1,10 @@
+
+* Write tests for each individual component
+  * Model
+  * Collection
+  * View
+* Write tests to test `mixin`
+  * Collision management on mixin?
+* Add browserify support to create a browser bundle and run the tests also in
+  browsers
+

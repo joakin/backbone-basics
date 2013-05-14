@@ -1,0 +1,29 @@
+{
+  "name": "backbone-basics",
+  "version": "0.0.1",
+  "description": "Backbone support library",
+  "author": "Joaquin Oltra (http://chimeces.com/)",
+  "homepage": "https://github.com/joakin/backbone-basics",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:joakin/backbone-basics.git"
+  },
+  "main": "./src/index",
+  "scripts": {
+    "prepublish": "make prepublish",
+    "postpublish": "make postpublish",
+    "test": "make test",
+    "postinstall": "make postinstall"
+  },
+  "engines": {
+    "node": "> 0.6.10"
+  },
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "underscore": "~1.4.4"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "chai": "~1.6.0"
+  }
+}
