@@ -69,21 +69,20 @@ var inbox = new Inbox({
     email: 'john@example.com'
   },
   messages: [{
-      subject: 'Example 1',
-      text: 'Text 1',
-      sender: {
-        name: 'John',
-        email: 'john@example.com'
-      }
-    }, {
-      subject: 'Example 2',
-      text: 'Text 2',
-      sender: {
-        name: 'John',
-        email: 'john@example.com'
-      }
+    subject: 'Example 1',
+    text: 'Text 1',
+    sender: {
+      name: 'John',
+      email: 'john@example.com'
     }
-  ]
+  }, {
+    subject: 'Example 2',
+    text: 'Text 2',
+    sender: {
+      name: 'John',
+      email: 'john@example.com'
+    }
+  }]
 }, {
   parse: true
 })
