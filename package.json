@@ -10,13 +10,14 @@
   },
   "main": "./src/index",
   "scripts": {
-    "prepublish": "make prepublish",
-    "postpublish": "make postpublish",
-    "test": "make test",
-    "postinstall": "make postinstall"
+    "test": "make test"
   },
   "engines": {
     "node": "> 0.6.10"
+  },
+  "browser": {
+    "backbone": "./shims/backbone.js",
+    "underscore": "./shims/underscore.js"
   },
   "dependencies": {
     "backbone": "~1.0.0",
@@ -24,6 +25,8 @@
   },
   "devDependencies": {
     "mocha": "~1.9.0",
-    "chai": "~1.6.0"
+    "chai": "~1.6.0",
+    "uglify-js": "~2.3.3",
+    "browserify": "~2.13.3"
   }
 }

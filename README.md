@@ -196,8 +196,23 @@ included in Basics in the future to be mixed with the basics types.
 
 ## Usage
 
-Still in development, at the moment is only in requireable files, there is not
-a compiled version on a unified file.
+### From a browserify enabled client side module
+
+If you are developing a module or application and using browserify as a module
+loader, then just include backbone-basics on the `package.json` as a
+dependency, and require it normally.
+
+### From a server side node.js module
+
+Same as above. Declare the dependency on the `package.json` of your module/app
+and require it normally.
+
+### From a browser side application that does NOT use browserify
+
+You have to grab the file `browser/backbone-basics.js` or
+`browser/backbone-basics-min.js` and include it on your page after the
+required dependencies. It will define a global variable on the window object
+called `Basics`, that you can use then normally.
 
 ## Development
 
