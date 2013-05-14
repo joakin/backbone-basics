@@ -68,24 +68,25 @@ var inbox = new Inbox({
     name: 'John',
     email: 'john@example.com'
   },
-  messages: [
-    {
-    subject: 'Example 1',
-    text: 'Text 1',
-    sender: {
-      name: 'John',
-      email: 'john@example.com'
+  messages: [{
+      subject: 'Example 1',
+      text: 'Text 1',
+      sender: {
+        name: 'John',
+        email: 'john@example.com'
+      }
+    }, {
+      subject: 'Example 2',
+      text: 'Text 2',
+      sender: {
+        name: 'John',
+        email: 'john@example.com'
+      }
     }
-  }, {
-    subject: 'Example 2',
-    text: 'Text 2',
-    sender: {
-      name: 'John',
-      email: 'john@example.com'
-    }
-  }
   ]
-}, { parse: true })
+}, {
+  parse: true
+})
 
 var ownerName = inbox.get('owner').get('name')
   , secondMessageSubject = inbox.get('messages').at(1).get('subject')
